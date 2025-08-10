@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+body{
+     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ 
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #DFB987;
+    width: 400px;
+    padding: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.753);
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+    text-align: center;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header p {
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.s1 h2{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+
+.img{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.s{
+   display: flex;
+   justify-content: space-between;
+   padding: 5px;
+}
+
+.f{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f p{
+    padding: 5px;
+}
+
+hr{
+    background-color: red;
+    height: 2px;
+    border: none;
+}
+
+a{
+    color: black;
+    cursor: pointer;
+}
