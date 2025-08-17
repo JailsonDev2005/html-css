@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/brienzer-rothorn-8208608_1280.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(211, 211, 211, 0.59);
+    width: 350px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.formuario h1{
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.formuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargLogin{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.cargLogin label{
+    padding: 5px;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.cargLogin input{
+    padding: 12px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(211, 211, 211, 0.59);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cargLogin input::placeholder{
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btnLogin{
+   width: 100%;
+   padding: 10px 20px;
+   margin: 20px 10px;
+   background-color: #ffb428dc;
+   color: #fff;
+   font-weight: 700;
+   font-size: 1.2em;
+   border-radius: 20px;
+   outline: none;
+   border: 2px solid rgba(211, 211, 211, 0.59);
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btnLogin:hover{
+    background-color: transparent;
+    transition: .5s;
+}
