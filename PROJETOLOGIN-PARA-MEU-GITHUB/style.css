@@ -22,7 +22,7 @@ body{
     padding: 20px 30px;
     border-radius: 20px;
     border: 2px solid lightgrey;
-    background:  transparent;
+    background:  transparent no-repeat;
     backdrop-filter: blur(15px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -111,6 +111,7 @@ body{
 .btnLogin:hover{
     background: transparent;
     transition: .3s;
+    color:#fff;
 }
 
 .registroLink{
