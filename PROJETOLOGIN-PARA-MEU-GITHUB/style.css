@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:  url(mountain_landscape26_generated.jpg);
+    background:url(img/mountain_landscape26_generated.jpg);
 }
 
 .container{
