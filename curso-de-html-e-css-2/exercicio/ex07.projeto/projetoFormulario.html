@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Formulario de Cliente</legend>
+                <div class="input">
+                    <input type="text">
+                    <label for="" class="il">Nome completo</label>
+                </div>
+                <div class="input">
+                    <input type="email">
+                    <label for="email" class="il">Email</label>
+                </div>
+                <div class="input">
+                    <input type="number">
+                    <label for="" class="il">Telefone</label>
+                </div>
+                <div class="inputGenero">
+                    <p>Sexo:</p>
+                    <div>
+                        <input type="radio" name="genero" id="Feminino" value="Feminino" required>
+                        <label for="Feminino">Feminino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" id="Masculino" value="Masculino" required>
+                        <label for="Masculino">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" id="Outro" value="Outro" required>
+                        <label for="Outro">Outro</label>
+                    </div>
+                </div>
+                <div class="inputData">
+                    <p>Data de Nascimento:</p>
+                    <input type="date" name="data" id="idata">
+                </div>
+                <div class="input">
+                    <input type="text" name="Cidade" id="icidade">
+                    <label for="icidade"  class="il">Cidade</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="Estado" id="iestado">
+                    <label for="iestado"class="il">Estado</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="Endereco" id="iendereco">
+                    <label for="iendereco"class="il">Endereço</label>
+                </div>
+                <input class="btn" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
