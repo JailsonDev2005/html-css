@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar formulario</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -19,41 +20,41 @@
                     <div class="formInput">
                         <label for="inome">Nome</label>
                         <div class="Input-box">
-                            <input type="text" name="nome" id="inome" placeholder="Nome">
+                            <input type="text" name="nome" id="inome" placeholder="Nome" class="form-control">
                             <i class="fa-solid fa-user"></i>
                         </div>
                     </div>
                     <div class="formInput">
                         <label for="iSobrenome">Sobrenome</label>
                         <div class="Input-box">
-                            <input type="text" name="Sobrenome" id="iSobrenome" placeholder="Sobrenome">
+                            <input type="text" name="Sobrenome" id="iSobrenome" placeholder="Sobrenome" class="form-control">
                             <i class="fa-solid fa-user"></i>
                         </div>
                     </div>
                     <div class="formInput">
                         <label for="iNas">Nascimento</label>
                         <div class="Input-box">
-                            <input type="date" name="Nas" id="iNas" placeholder="Sobrenome">
+                            <input type="date" name="Nas" id="iNas" placeholder="Sobrenome" class="form-control">
                         </div>
                     </div>
                     <div class="formInput">
                         <label for="iemail">E-mail</label>
                         <div class="Input-box">
-                            <input type="email" name="email" id="iemail" placeholder="Exemplo@gmail.com">
+                            <input type="email" name="email" id="iemail" placeholder="Exemplo@gmail.com" class="form-control">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                     </div>
                     <div class="formInput">
                         <label for="iSen">Senha</label>
                         <div class="Input-box">
-                            <input type="password" name="Sen" id="iSen" placeholder="Senha">
+                            <input type="password" name="Sen" id="iSen" placeholder="Senha" class="form-control">
                             <i class="fa-solid fa-eye-slash password-icon"></i>
                         </div>
                     </div>
                     <div class="formInput">
                         <label for="iSenCon">Confirmar Senha</label>
                         <div class="Input-box">
-                            <input type="password" name="SenCon" id="iSenCon" placeholder="Confrimar Senha">
+                            <input type="password" name="SenCon" id="iSenCon" placeholder="Confrimar Senha" class="form-control">
                             <i class="fa-solid fa-eye-slash password-icon"></i>
                         </div>
                     </div>
@@ -66,7 +67,7 @@
                             <label for="if" class="label">Feminino</label>
                         </div>
                         <div class="genero-box">
-                            <input type="radio" name="gender" id="Ic" value="masculino">
+                            <input type="radio" name="gender" id="Ic" value="masculino"
                             <label for="ic" class="label">Masculino</label>
                         </div>
                         <div class="genero-box">
@@ -80,5 +81,7 @@
             </form>
         </div>
     </main>
+
+    <script src="Javascript.js"></script>
 </body>
 </html>

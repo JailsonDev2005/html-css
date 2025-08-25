@@ -1,0 +1,48 @@
+@media (max-width: 480px){
+    body{
+        padding:10px ;
+        height: auto;
+    }
+
+    .container{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .cabeca{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .cabeca h1::after{
+        width: 60px;
+    }
+
+
+
+    .form-container{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #b1{
+        grid-column: span 1;
+        width: 100%;
+    }
+
+    #b2{
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .input-box input{
+        font-size: 0.9em;
+    }
+
+    .formInput label{
+        font-size: 11px;
+    }
+}

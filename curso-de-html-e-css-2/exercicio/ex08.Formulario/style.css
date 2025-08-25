@@ -87,6 +87,9 @@ form{
 }
 
 .Input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
     padding: 7px 5px;
     border-radius: 6px;
