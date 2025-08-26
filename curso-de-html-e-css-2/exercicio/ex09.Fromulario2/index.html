@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_browsing-online_rozb.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#" autocomplete="on">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadraste-se</h1>
+                    </div>
+                    <div class="login-botom">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Digite seu primeiro Nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">G-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Celular">Numero</label>
+                        <input type="number" name="Celular" id="Celular" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder=" Digite sua Senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="senhaC">Comfirme sua Senha</label>
+                        <input type="password" name="senhaC" id="senhaC" placeholder=" Digite sua Senha" required>
+                    </div>
+                </div>
+
+                <div class="genero-input">
+                    <div class="genero-titulo">
+                        <h6>Género</h6>
+
+                        <div class="genero-grupo">
+                            <div class="genero-input">
+                                <input type="radio" id="famele" name="genero">
+                                <label for="famele">Feminino</label>
+                            </div>
+
+                            <div class="genero-input">
+                                <input type="radio" id="mele" name="genero">
+                                <label for="mele">Masculino</label>
+                            </div>
+
+                            <div class="genero-input">
+                                <input type="radio" id="none" name="genero">
+                                <label for="none">Prefiro não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
