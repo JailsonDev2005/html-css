@@ -7,77 +7,62 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form-image">
+    <main>
+        <section class="foto">
             <img src="assets/img/undraw_browsing-online_rozb.svg" alt="">
-        </div>
-        <div class="form">
-            <form action="#" autocomplete="on">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadraste-se</h1>
+        </section>
+        <section class="form-container">
+            <form action="#">
+                <div class="titulo">
+                    <h1>Cadastre-se</h1>
+                    <button class="btn-e">Enviar</button>
+                </div>
+                <div class="container">
+                    <div class="input-box">
+                        <label for="inome">Primeiro Nome</label>
+                        <input type="text" name="nome" id="inome" placeholder="Digite seu primeiro nome">
                     </div>
-                    <div class="login-botom">
-                        <button><a href="#">Entrar</a></button>
+                    <div class="input-box">
+                        <label for="iSob">Sobrenome</label>
+                        <input type="text" name="Sob" id="iSob" placeholder="digite  seu sobrenome">
+                    </div>
+                    <div class="input-box">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu email">
+                    </div>
+                    <div class="input-box">
+                        <label for="icel">Celular</label>
+                        <input type="number" name="cel" id="icel" placeholder="(xx) xxxx-xxxx">
+                    </div>
+                    <div class="input-box">
+                        <label for="isen">Senha</label>
+                        <input type="password" name="sen" id="isen" placeholder="Digite sua senha">
+                    </div>
+                    <div class="input-box">
+                        <label for="isenc">Confirme sua Senha</label>
+                        <input type="password" name="senc" id="isenc" placeholder="Confirme sua senha">
                     </div>
                 </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Digite seu primeiro Nome" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="email">G-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="Celular">Numero</label>
-                        <input type="number" name="Celular" id="Celular" placeholder="(xx) xxxx-xxxx" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder=" Digite sua Senha" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="senhaC">Comfirme sua Senha</label>
-                        <input type="password" name="senhaC" id="senhaC" placeholder=" Digite sua Senha" required>
-                    </div>
-                </div>
-
-                <div class="genero-input">
-                    <div class="genero-titulo">
-                        <h6>Género</h6>
-
-                        <div class="genero-grupo">
-                            <div class="genero-input">
-                                <input type="radio" id="famele" name="genero">
-                                <label for="famele">Feminino</label>
+                    <div class="genero">
+                        <p>Gênero</p>
+                        <div class="g">
+                            <div class="genero-box">
+                                <input type="radio" name="masculino" id="im">
+                                <label for="im">Masculino</label>
                             </div>
-
-                            <div class="genero-input">
-                                <input type="radio" id="mele" name="genero">
-                                <label for="mele">Masculino</label>
+                            <div class="genero-box">
+                                <input type="radio" name="feminino" id="if">
+                                <label for="if">Feminino</label>
                             </div>
-
-                            <div class="genero-input">
-                                <input type="radio" id="none" name="genero">
-                                <label for="none">Prefiro não dizer</label>
+                            <div class="genero-box">
+                                <input type="radio" name="none" id="io">
+                                <label for="io">Outros</label>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <input type="submit" value="Continuar" class="btn-c">
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -7,203 +7,147 @@
     font-family:"Poppins", sans-serif;
 }
 
+:root{
+    /* 🎨 Paleta 1 – Minimalista Clean */
+
+  --cor-primaria1: #2563eb;
+  --cor-secundaria1: #1e293b; 
+  --cor-fundo1: #f8fafc;     
+  --cor-destaque1: #38bdf8; 
+  --cor-texto1: #0f172a;
+
+  /* 🎨 Paleta 2 – Aesthetic Pastel */
+
+  --cor-primaria2: #a78bfa;   
+  --cor-secundaria2: #f472b6;
+  --cor-fundo2: #faf5ff;     
+  --cor-destaque2: #34d399;   
+  --cor-texto2: #1f2937; 
+
+  /* 🎨 Paleta 3 – Dark Mode Elegante */
+
+  --cor-secundaria3: #9333ea; 
+  --cor-fundo3: #0f172a;      
+  --cor-destaque3: #facc15;   
+  --cor-texto3: #f9fafb;
+  
+  /* 🎨 Paleta 4 – Nature Calm */
+
+  --cor-secundaria4: #3b82f6;
+  --cor-fundo4: #f1f5f9;      
+  --cor-destaque4: #eab308;  
+  --cor-texto4: #0f172a;      
+}
+
 body{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:  #0c0ce94d;
+    background-color: #a78bfa;
 }
 
-.container{
+main{
     width: 80%;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .202);
-}
-
-.form-image{
-    width: 50%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fde3a7d7;
-    padding: 1rem;
 }
 
-.form-image img{
-    width: 31rem;
-}
-
-form{
-    width: 147%;
+.foto{
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 3rem;
+    background-color: #f472b6;
 }
 
-.form-header{
-    margin-bottom: 3rem;
+.foto img{
+    width: 400px;
+}
+
+.form-container{
+    width: 50%;
+    height: 100%;
+    background-color: #faf5ff;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.titulo{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 15px;
 }
 
-.login-botom{
-    display: flex;
-    align-items: center;
-}
-
-.login-botom button{
-    border: none;
-    background-color: #6c63ff;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-.login-botom button:hover{
-    background-color: #6b63ff11;
-}
-
-.login-botom a{
-    text-decoration: none;
-    font-weight: 500;
+.btn-e{
+    background-color:#9333ea;
     color: #fff;
-}
-
-.form-header::after{
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #6c63ff;
-    margin:  0 auto;
-    position: absolute;
+    padding: 5px 10px;
+    margin: 10px;
     border-radius: 10px;
+    border: none;
 }
 
-.input-group{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .input-box{
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    
 }
 
 .input-box input{
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #000001;
-}
-
-.input-box input:hover{
-    background-color: #eeeeee75;
-}
-
-.input-box input:focus-visible{
-    outline: 1px solid #6c63ff;
-}
-
-.input-box label,
-.genero-titulo h6{
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.input-box input::placeholder{
-    color: #000000be;
-}
-
-.genero-grupo{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
-}
-
-.genero-input{
-    display: flex;
-    align-items: center;
-}
-
-.genero.input input{
-    margin-right: 0.35rem;
-}
-
-.genero-input label{
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.container button{
     width: 100%;
-    margin-top: 2.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     border: none;
-    background-color: #6c63ff;
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.container button:hover{
-    background-color: #6c63fff1;
+.input-box label{
+    margin-bottom: 5px;
 }
 
-.container button a{
-    text-decoration: none;
-    font-size: 0.93rem;
+.genero{
+    width: 100%;
+}
+
+.genero-box{
+    display: flex;
+    justify-content: center;
+   margin-right: 90px;
+}
+
+.genero-box input{
+    margin-right: 5px;
+}
+
+.g{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-c{
+    background-color: #9333ea;
     color: #fff;
-}
-
-@media screen and (max-width:1330px) {
-    .form-image{
-        display: none;
-    }
-
-    .container{
-        width:50%;
-    }
-
-    .form{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:1064px){
-    .container{
-        width: 90%;
-        height: auto;
-    }
-
-    .input-group{
-        flex-direction: column;
-        overflow-y:scroll ;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 5rem;
-    }
-
-    .genero-input{
-        margin-top: 2rem;
-    }
-
-    .genero-grupo{
-        flex-direction: column;
-        margin-top: 0.5rem;
-    }
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
 }
