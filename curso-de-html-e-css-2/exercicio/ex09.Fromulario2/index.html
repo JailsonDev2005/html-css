@@ -7,62 +7,66 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <main>
-        <section class="foto">
+   <main>
+        <div class="foto">
             <img src="assets/img/undraw_browsing-online_rozb.svg" alt="">
-        </section>
-        <section class="form-container">
-            <form action="#">
+        </div>
+        <div class="container">
+            <form>
                 <div class="titulo">
                     <h1>Cadastre-se</h1>
-                    <button class="btn-e">Enviar</button>
+                    <button>Enviar</button>
                 </div>
-                <div class="container">
+                <div class="input-container">
                     <div class="input-box">
-                        <label for="inome">Primeiro Nome</label>
-                        <input type="text" name="nome" id="inome" placeholder="Digite seu primeiro nome">
+                        <label for="inome">Primeiro nome</label>
+                        <input type="text" name="nome" id="inome" placeholder="Digite seu nome">
                     </div>
                     <div class="input-box">
-                        <label for="iSob">Sobrenome</label>
-                        <input type="text" name="Sob" id="iSob" placeholder="digite  seu sobrenome">
+                        <label for="isob">Sobrenome</label>
+                        <input type="text" name="sob" id="isob" placeholder="Digite seu sobrenome">
                     </div>
                     <div class="input-box">
                         <label for="iemail">E-mail</label>
-                        <input type="email" name="email" id="iemail" placeholder="Digite seu email">
+                        <input type="text" name="email" id="iemail" placeholder="Digite seu email">
                     </div>
                     <div class="input-box">
-                        <label for="icel">Celular</label>
-                        <input type="number" name="cel" id="icel" placeholder="(xx) xxxx-xxxx">
+                        <label for="icell">Celular</label>
+                        <input type="tel" name="cell" id="icell" placeholder="(xx) xxxx-xxxx">
                     </div>
                     <div class="input-box">
                         <label for="isen">Senha</label>
                         <input type="password" name="sen" id="isen" placeholder="Digite sua senha">
                     </div>
                     <div class="input-box">
-                        <label for="isenc">Confirme sua Senha</label>
-                        <input type="password" name="senc" id="isenc" placeholder="Confirme sua senha">
+                        <label for="ics">confirme sua senha</label>
+                        <input type="password" name="cs" id="ics" placeholder="Confirme sua senha">
                     </div>
-                </div>
+
                     <div class="genero">
                         <p>Gênero</p>
-                        <div class="g">
-                            <div class="genero-box">
-                                <input type="radio" name="masculino" id="im">
-                                <label for="im">Masculino</label>
-                            </div>
-                            <div class="genero-box">
+                        <div class="genero-box">
+                            <div class="g">
                                 <input type="radio" name="feminino" id="if">
                                 <label for="if">Feminino</label>
                             </div>
-                            <div class="genero-box">
+                            <div class="g">
+                                <input type="radio" name="masculino" id="ic">
+                                <label for="ic">Masculino</label>
+                            </div>
+                            <div class="g">
                                 <input type="radio" name="none" id="io">
                                 <label for="io">Outros</label>
                             </div>
+                            
                         </div>
+                        
                     </div>
-                    <input type="submit" value="Continuar" class="btn-c">
+                    
+                </div>
+                <input type="submit" value="Continuar" class="btn-c">
             </form>
-        </section>
-    </main>
+        </div>
+   </main>
 </body>
 </html>
