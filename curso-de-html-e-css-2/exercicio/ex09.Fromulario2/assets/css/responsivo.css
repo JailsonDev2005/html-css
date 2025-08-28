@@ -1,0 +1,23 @@
+@media (max-width: 601px) and (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  .foto {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .input-container {
+    grid-template-columns: 1fr; /* mantém duas colunas */
+  }
+
+  .foto{
+    display: none;
+  }
+}
