@@ -20,25 +20,13 @@
 }
 
 body{
-    
-}
-
-.header{
-     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-bottom: var(--borde);
     background-color: var(--bg);
 }
 
-.nav{
-    padding: 2rem;
+.imgd{
+  filter: brightness(0) invert(1);
 }
 
-.nav a{
-    margin: 0rem 1rem ;
-    font-size: 1.5rem;
-    font-weight: 600;
+.header{
+
 }
