@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background:url(img/pexels-jakewymoore-16124131.jpg) no-repeat;
+    background-size: cover;
+    background-position:  right bottom;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.556);
+    border-bottom: 1px solid #7D8685;
+}
+
+.header .logo{
+    background-color: transparent;
+    border-radius: 12px;
+    color: #ce4c28;
+    border: 2px solid #ce4c28;
+    padding:  10px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.header .logo:hover{
+    color: #FFF;
+    border: 2px solid #fff;
+    background-color: #ce4c28;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 5px;
+    margin-right: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color:#fff;
+    background-color: #ce4c28;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.693);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    background: transparent;
+}
+
+.titulo{
+    position: absolute;
+    top:320px;
+    left: 150px;
+    border: 2px solid #7D8685;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.688);
+    color: #fff;
+    width: 630px;
+    padding: 20px 40px;
+}
+
+.titulo h1{
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+
+.titulo h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ce4c28;
+}
+
+.titulo p{
+    margin-bottom: 10px;
+}
+
+.btn-container{
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-container a{
+    position: relative;
+    border: 2px solid #7D8685;
+    background-color: #f24110;
+    color: #FFF;
+    padding: 9px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-container a:hover{
+    background-color: #d6411c;
+    box-shadow: 1px 0px 5px 5px#f24110af;
+}
+
+.btn-container a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff6e46;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-container a:hover::before{
+    width: 100%;
+
+}
+
+.rede-social{
+    position: relative;
+    background-color: blue;
+}
+
+.rede-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: absolute;
+    bottom: 500px;
+    left: 50px;
+    width: 50px;
+    height: 100px;
+    padding: 10px;
+    
+}
+
+.rede-box i{
+    color: #ce4c28;
+    font-size: 30px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.rede-box i:hover{
+    color: white;
+    background-color: #ce4c28;
+}
+
