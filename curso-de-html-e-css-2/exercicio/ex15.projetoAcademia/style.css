@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    background-color: gray;
+   background: linear-gradient(98deg,rgba(41, 41, 41, 0.793) 14%, rgba(48, 48, 48, 0.696) 84%), url(img/foto-3.jpg) no-repeat;
+   background-position: top center;
+   background-size: cover;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+}
+
+.navegacao a{       
+    padding: 15px;
+    margin-left: 20px;
+    
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.navegacao a:hover{
+    background-color: rgba(211, 211, 211, 0.374);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.social{
+    padding: 5px;
+}
+
+.social a i{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.social a i:hover{
+ color: rgb(206, 206, 206);
+ background-color: rgba(211, 211, 211, 0.374);
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal{
+    width: 450px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.principal p{
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.link{
+    margin-top: 30px;
+    padding: 10px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.link a{
+    margin-left: 10px;
+    width: 150px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.link a:hover{
+    background-color: rgba(211, 211, 211, 0.374);
+    color: black;
+}
