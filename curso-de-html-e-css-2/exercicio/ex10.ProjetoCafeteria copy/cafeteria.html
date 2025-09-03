@@ -5,46 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev cafeteria</title>
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header class="cabeca">
-      <section class="c1">
-        <a href="#"><img src="img/logo.png" alt="" class="logo"/></a>
-        <nav class="nav">
-          <a href="#">Home</a>
-          <a href="#">Sobre</a>
-          <a href="#">Menu</a>
+    <header class="header">
+      <section class="header-box" >
+        <img src="img/logo.png" alt="">
+
+        <nav class="navegacao">
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#menu">Menu</a>
           <a href="#">Avaliações</a>
           <a href="#">Endereço</a>
         </nav>
+
         <div class="icons">
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios-filled/50/search--v1.png"
-            alt="search--v1"
-            class="imgd"
-          />
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"
-            alt="shopping-cart--v1"
-            class="imgd"
-          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </section>
     </header>
-
-    <main class="corpo">
-        <div class="titulo-main">
-          <h1>CODE COM O MELHOR CAFÉ DA REGIÃO</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quasi esse. Recusandae quisquam rerum consectetur autem neque provident cupiditate quaerat perferendis aliquid culpa, quas saepe sit a asperiores quos omnis?
-          </p>
-          <button class="btn">Pegue o Seu AGORA</button>
+    
+    <div class="main-container">
+      <section id="home">
+        <div class="content">
+          <h3>CODE COM O MELHOR CAFÉ DA REGIÃO</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit tempora voluptatibus dolor quidem, unde nisi at incidunt repellat ipsam hic, quia autem quos distinctio soluta earum rerum error asperiores?</p>
+          <a href="#" class="btn"><p>Pegue o seu Agora</p></a>
         </div>
-
-    </main>
+      </section>
+    </div>
+    
+    <section class="sobre-container" id="sobre">
+      <h2>Sobre <span>nós</span></h2>
+      <div class="container">
+        <div class="img">
+          <img src="img/about-img.jpg" alt="">
+        </div>
+        <div class="titulo">
+          <h3>O que faz Nosso café Especial</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sed pariatur ducimus qui perspiciatis deleniti accusantium rem aspernatur alias officia quo voluptatibus itaque dolorem, minima ipsam ipsa et magni maiores!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil odit totam cum numquam reiciendis harum, pariatur voluptatum provident eligendi adipisci neque consectetur incidunt blanditiis quibusdam aspernatur dolorum veniam accusamus.</p>
+          <a href="#" class="btn"><p>Saiba Mais</p></a>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <h2>nossos <span>menus</span></h2>
+      <div class="menu-box">
+        <div class="box">
+          <img src="img/menu-1.png" alt="">
+          <h3>Café coado</h3>
+          <p>R$15.99 <span>20,99</span></p>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+        <div class="box">
+          <img src="img/menu-2.png" alt="">
+          <h3>Café coado</h3>
+          <p>R$15.99 <span>20,99</span></p>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+        <div class="box">
+          <img src="img/menu-3.png" alt="">
+          <h3>Café coado</h3>
+          <p>R$15.99 <span>20,99</span></p>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+        <div class="box">
+          <img src="img/menu-4.png" alt="">
+          <h3>Café coado</h3>
+          <p>R$15.99 <span>20,99</span></p>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+        <div class="box">
+          <img src="img/menu-5.png" alt="">
+          <h3>Café coado</h3>
+          <p>R$15.99 <span>20,99</span></p>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+        <div class="box">
+          <img src="img/menu-6.png" alt="">
+          <h3>Café coado</h3>
+          <p>R$15.99 <span>20,99</span></p>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
