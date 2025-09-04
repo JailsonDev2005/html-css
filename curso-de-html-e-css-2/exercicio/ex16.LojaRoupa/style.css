@@ -193,6 +193,7 @@ body{
     max-width: 1400px;
     margin: auto;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .menu-box .box img{
@@ -238,4 +239,46 @@ body{
     text-align: center;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.Endereço{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Endereço h2{
+   font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.Endereço h2 span{
+    color:#343535 ;
+}
+
+.endereco-box{
+   padding: 20px 20px;
+   background-color: #fff;
+   border-radius: 12px;
+}
+
+.footer{
+    padding: 10px 0px;
+    text-align: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.footer-box i{
+    font-size: 30px;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer-box i:hover{
+    color: #c1c1c1;
 }
