@@ -9,7 +9,6 @@
 }
 
 body{
-    background-color: gray;
    background: linear-gradient(98deg,rgba(41, 41, 41, 0.793) 14%, rgba(48, 48, 48, 0.696) 84%), url(img/foto-3.jpg) no-repeat;
    background-position: top center;
    background-size: cover;
@@ -112,4 +111,110 @@ main{
 .link a:hover{
     background-color: rgba(211, 211, 211, 0.374);
     color: black;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) and (min-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 20px 20px;
+        gap: 20px;
+    }
+    .principal {
+        width: 90vw;
+        padding: 20px 10px;
+    }
+    .principal h1 {
+        font-size: 32px;
+    }
+    .principal p {
+        font-size: 18px;
+    }
+    .navegacao a {
+        font-size: 15px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .logo {
+        font-size: 20px;
+        padding-bottom: 6px;
+    }
+    main {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+    }
+    .link a {
+        width: 120px;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navegacao {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navegacao a {
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .principal {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .principal h1 {
+        font-size: 26px;
+        line-height: 1.3em;
+    }
+
+    .principal p {
+        font-size: 16px;
+    }
+
+    .link {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .link a {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 12px;
+        font-size: 14px;
+    }
+
 }
