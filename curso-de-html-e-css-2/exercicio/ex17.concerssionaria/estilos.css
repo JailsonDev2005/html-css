@@ -77,7 +77,7 @@ header{
     background: url(img/fundo-4.jpg) no-repeat;
     background-size: cover;
     background-position: center bottom;
-    border-bottom:border-bottom: 2px solid rgba(211, 211, 211, 0.728); ;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.728);
 }
 
 .principal::after {
