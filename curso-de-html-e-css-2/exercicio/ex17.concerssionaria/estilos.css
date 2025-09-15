@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+/* estilização do cabeçalho */
+
+.logo{
+    width: 100px;
+    filter: brightness(0) invert(1);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+header{
+    background-color: black;
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.728);
+    position: relative;
+    z-index: 10;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* estilização da navegação */
+
+
+.navegacao a{
+    position: relative;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 1rem;
+    margin-left: 15px;
+}
+
+.navegacao a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.6s ease-in-out;
+}
+
+.navegacao a:hover::after{
+    width: 100%;
+}
+
+/* estilização da seção principal */
+
+.principal{
+    width: 100vw;
+    height:100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: url(img/fundo-4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    border-bottom:border-bottom: 2px solid rgba(211, 211, 211, 0.728); ;
+}
+
+.principal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.294);
+}
+
+.p-box{
+   border: 2px solid rgba(255, 255, 255, 0.509);
+   border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    width: 500px;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.773);
+}
+
+.p-box h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.p-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.btn-p{
+    position: relative;
+    background-color:#df8730 ;
+    color: #fff;
+    width: 130px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.357);
+    transition: all 0.5s ease;
+}
+
+.btn-p:hover{
+    background-color: #fff;
+    color: #000;
+}
