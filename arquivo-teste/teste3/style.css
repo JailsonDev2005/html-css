@@ -1,0 +1,17 @@
+body{
+    background-color:oklch(21% 0.034 264.665) ;
+}
+
+.container{
+    display: flex;
+    background-color:oklch(39.1% 0.09 240.876) ;
+    gap: 15px;
+    height: 600px;
+    flex-flow:row wrap ;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: oklch(86.5% 0.127 207.078);
+}
