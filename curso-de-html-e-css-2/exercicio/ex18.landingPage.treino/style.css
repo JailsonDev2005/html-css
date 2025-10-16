@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+      font-family: "Outfit", sans-serif;
+}
+
+body{
+    max-width: 1200px;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.header img{
+width: 130px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(29%) saturate(860%) hue-rotate(285deg) brightness(91%) contrast(88%);
+  cursor: pointer;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav a{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+    transition: .4s ease;
+}
+
+.header .nav a:hover{
+    color: #db4aa4;
+}
+
+.corpo{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.principal{
+    width: 50%;
+}
+
+.principal h1{
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #8E4673;
+}
+
+.principal h2{
+    margin-top: 5px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.principal p{
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    border: none;
+    background-color: #8E4673;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover{
+    background-color: #db4aa4;
+}
+
+.secundaria-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secundaria-img img{
+    width: 540px;
+}
+
+.social{
+
+}
+
+.social a{
+    color: white;
+    background-color: #8E4673;
+    padding: 12px;
+    margin-left: 5px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.social a:hover{
+    background-color: #db4aa4;
+}
