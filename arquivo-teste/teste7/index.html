@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora moderna</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Teste Calculadora</h1>
+    <div class="calculator">
+        <input type="text" disabled id="display">
+        <div class="box-buttons">
+            <button onclick="limpar()">C</button>
+            <button onclick="remover()">&lt</button>
+            <button onclick="inseri('/')">/</button>
+            <button onclick="inseri('*')">*</button>
+            <button onclick="inseri('7')">7</button>
+            <button onclick="inseri('8')">8</button>
+            <button onclick="inseri('9')">9</button>
+            <button onclick="inseri('-')">-</button>
+            <button onclick="inseri('4')">4</button>
+            <button onclick="inseri('5')">5</button>
+            <button onclick="inseri('6')">6</button>
+            <button onclick="inseri('+')">+</button>
+            <button onclick="inseri('1')">1</button>
+            <button onclick="inseri('2')">2</button>
+            <button onclick="inseri('3')">3</button>
+            <button class="btn-zero" onclick="inseri('0')">0</button>
+            <button onclick="inseri('.')">.</button>
+            <button class="btnigual" onclick="calcular()">=</button>
+        </div>
+    </div>
+</body>
+</html>
