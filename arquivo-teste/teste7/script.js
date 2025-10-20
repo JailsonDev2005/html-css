@@ -1,23 +1,29 @@
-function inseri(data){
-    let display = document.getElementById("display");
-    display.value += data;
+// Criar a primeira function para mostra os elementos dos butoes na tela do display com  o parametro "data"
+function naTela(data){
+    let txtTela = document.getElementById("display");
+    txtTela.value += data;
 }
 
+
 function limpar(){
-    let C = document.getElementById("display");
-    C.value = "";
+
+    display.value = ""
+
+
 }
 
 function remover(){
-    let remover = document.getElementById("display");
-    remover.value = display.value.slice(0, -1)
+    let display = document.getElementById("display");
+    display.value = display.value.slice(0, -1)
 }
 
+
 function calcular(){
-    let remover = document.getElementById("display");
+    let display = document.getElementById("display");
+
     try{
         display.value = eval(display.value)
     }catch{
-        display.value = "erro"
+        display.value = 'error'
     }
 }
