@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+}
+
+header{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.login-buttom a{
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all .3s;
+}
+
+.login-buttom a:hover{
+    background-color: #153e48;
+}
+
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+    transition: all .3s;
+}
+
+@media screen and (max-width: 768px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .login-buttom{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        color: #fff;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-buttom{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-buttom a{
+        display: block;
+        text-align: center;
+        width: 100px;
+        margin: auto;
+    }
+
+    .mobile-menu .login-buttom button{
+        width: 100vh;
+    }
+
+    .open{
+        display: block;
+    }
+}
