@@ -180,12 +180,13 @@ animation: main-slider 1s ease-in-out forwards;
 .foto img{
     display: flex;
     width: 700px;
+    border-radius: 12px;
 }
 
 .sobre-nos h2{
     text-align: center;
     padding: 2rem 0rem;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 800;
 }
 
@@ -225,9 +226,84 @@ animation: main-slider 1s ease-in-out forwards;
     width: 130px;
     display: inline-flex;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .foto a:hover{
+    background-color: rgb(171, 24, 73);
+}
+
+.container-produtos{
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.container-produtos h2{
+    text-align: center;
+    padding: 2rem 0rem;
+    font-size: 2.3rem;
+    font-weight: 800;
+
+}
+
+.container-produtos p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: .7rem;
+}
+
+.container-produtos h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.container-produtos h2 span{
+    color: palevioletred;
+}
+
+.container-produtos .produtos{
+    padding: 2rem 1.5rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   gap: 2rem;
+   justify-items: center;
+}
+
+.container-produtos .box{
+    padding: 1rem;
+    width: 285px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.container-produtos .box img{
+    display: flex;
+    width: 250px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.box button{
+    background-color: palevioletred;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--withe);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.box button:hover{
     background-color: rgb(171, 24, 73);
 }
 
@@ -295,6 +371,35 @@ animation: main-slider 1s ease-in-out forwards;
 
     .main-container h3{
         font-size: 1.3rem;
+    }
+
+    .container-produtos .produtos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .foto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .foto h3{
+        text-align: center;
+    }
+
+    .texto a{
+       align-self: center;
+    }
+
+    .foto img{
+        display: flex;
+        width: 400px;
+        height: 400px;
+    }
+
+    .sobre-nos{
+        padding: 0rem 2rem;
     }
 }
 

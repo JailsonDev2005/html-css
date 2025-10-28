@@ -13,3 +13,7 @@ menuToggle.addEventListener('click', ()=>{
         icon.classList.add('fa-bars')
     }
 })
+
+function comprar(){
+    alert("Produto Comprado")
+}
