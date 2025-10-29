@@ -35,6 +35,7 @@ animation: main-slider 1s ease-in-out forwards;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9;
    background-color:var(--cor--principal2);
    width: 100vw;
    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.611);
@@ -305,6 +306,148 @@ animation: main-slider 1s ease-in-out forwards;
 
 .box button:hover{
     background-color: rgb(171, 24, 73);
+}
+
+.avaliacoes{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2.5rem;
+}
+
+.avaliacoes h2{
+    text-align: center;
+    padding: 2rem 0rem;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.avaliacoes h2 span{
+    color: palevioletred;
+}
+
+.avaliacoes .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.avaliacoes .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.444);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 1rem solid rgba(0,0,0,.1);
+}
+
+.avaliacoes .box-container .box .fa-quote-right{
+    position: absolute;
+    bottom: 49px;
+    right: 3px;
+    font-size: 2rem;
+    color: palevioletred;
+    
+}
+
+.avaliacoes .box-container .box .stars {
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+.avaliacoes .box-container .box  p{
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.avaliacoes .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+
+.avaliacoes .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.avaliacoes .box-container .box .user h3{
+    font-size: 2rem;
+}
+
+.avaliacoes .box-container .box .user span{
+    font-size: 1.5rem;
+}
+
+.contatos{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2.5rem;
+}
+
+.contatos h2{
+    text-align: center;
+    padding: 2rem 0rem;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.contatos h2 span{
+    color: palevioletred;
+}
+
+.contatos .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contatos .row form{
+    max-width: 600px;
+    margin: auto;
+    flex: 1 1 40rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.contatos .row form input{
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all .3s ease-in-out;
+}
+
+.contatos .row form input:hover{
+    box-shadow:  0px 1px 8px 1px palevioletred;
+}
+
+.contatos .row form  textarea{
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all .3s ease-in-out;
+}
+
+.contatos .row form textarea:hover{
+    box-shadow:  0px 1px 8px 1px palevioletred;
+}
+
+.contatos .row form .btn{
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.contatos .row form .box{
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 820px){
