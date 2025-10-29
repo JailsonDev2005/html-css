@@ -450,6 +450,26 @@ animation: main-slider 1s ease-in-out forwards;
     margin-bottom: 1rem;
 }
 
+footer{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem;
+}
+
+footer .rodape{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer .rodape a{
+    color: palevioletred;
+    transition: all .3s ease-in-out;
+}
+
+footer .rodape a:hover{
+    color: rgb(111, 50, 71);
+}
+
 @media (max-width: 820px){
     .nav-links{
         transition: transform .5s ease-in-out;
@@ -544,6 +564,27 @@ animation: main-slider 1s ease-in-out forwards;
     .sobre-nos{
         padding: 0rem 2rem;
     }
+}
+
+@media (max-width: 420px){
+    .header-container{
+        position: static;
+        width: 100%;
+    }
+    
+    .container-produtos .produtos{
+        grid-template-columns: 1fr;
+    }
+
+    .main-box{
+        width: 380px;
+    }
+
+    .foto img{
+        width: 350px;
+        height: 350px;
+    }
+
 }
 
 @keyframes main-slider{
