@@ -654,6 +654,12 @@ footer .rodape a:hover{
     .avaliacoes .box-container .box .user span{
         font-size: 0.9rem;
     }
+
+    .contatos .row form .btn{
+        background-color: red;
+        font-size: .8rem;
+        width: 100%;
+    }
 }
 
 @keyframes main-slider{
