@@ -410,7 +410,7 @@ animation: main-slider 1s ease-in-out forwards;
 }
 
 .contatos .row form{
-    max-width: 600px;
+    max-width: 80%;
     margin: auto;
     flex: 1 1 40rem;
     border-radius: 12px;
@@ -448,6 +448,9 @@ animation: main-slider 1s ease-in-out forwards;
     font-size: 1.1rem;
     font-weight: 400;
     cursor: pointer;
+    width: 20%;
+    align-self: center;
+   flex-flow: wrap;
 }
 
 .contatos .row form .box{
