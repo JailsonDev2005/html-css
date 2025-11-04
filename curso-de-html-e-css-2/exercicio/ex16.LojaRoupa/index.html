@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loja da Laura</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -53,7 +54,7 @@
           <h2>Laura's Store</h2>
           <h3>Laura, onde a moda encontra seu brilho.</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa inventore numquam quae. Culpa, explicabo magnam tenetur quas vel expedita quam eaque dolor possimus dolorum. Dignissimos distinctio veritatis quibusdam est rem?</p>
-          <a href="#">Compre agora</a>
+          <a class="Alink" href="#"><span>Compre agora</span></a>
         </section>
       </section>
 
@@ -81,37 +82,43 @@
       <h2><span>Nossos</span> Produtos</h2>
 
       <div class="produtos">
-      <div class="box">
+      <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
         <img src="img/item-1.jpg" alt="foto-produto">
         <h3>Ténis de corrida</h3>
         <p>$ 115,14</p>
         <button onclick="comprar()">Comprar</button>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
         <img src="img/item-2.png" alt="foto-produto">
         <h3>Short Rosa</h3>
         <p>$65,00</p>
         <button onclick="comprar()">Comprar</button>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
         <img src="img/item-3.png" alt="foto-produto">
         <h3>Jaqueta Marfim</h3>
         <p>$300,00</p>
         <button onclick="comprar()">Comprar</button>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
         <img src="img/item-4.png" alt="foto-produto">
         <h3>Calça Jeans</h3>
         <p>$59,90</p>
         <button onclick="comprar()">Comprar</button>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
         <img src="img/item-5.png" alt="foto-produto">
         <h3>Jaqueta de Couro</h3>
         <p>$297,90</p>
         <button onclick="comprar()">Comprar</button>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
         <img src="img/item-6.png" alt="foto-produto">
         <h3>Boné Aba Curva</h3>
         <p>$13,99</p>
@@ -125,7 +132,8 @@
     <section class="avaliacoes">
       <h2>avaliação dos <span>cliente</span></h2>
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
           <div class="stars">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -143,7 +151,8 @@
           </div>
           <span class="fas fa-quote-right"></span>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
           <div class="stars">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -161,7 +170,8 @@
           </div>
           <span class="fas fa-quote-right"></span>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up"
+     data-aos-duration="1000">
           <div class="stars">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -189,7 +199,7 @@
 
       <div class="row">
 
-        <form>
+        <form data-aos="zoom-out-left">
           <input type="text" placeholder="Nome" class="box">
           <input type="email" placeholder="Email" class="box">
           <input type="number" placeholder="Numero" class="box">
@@ -208,6 +218,9 @@
       </div>
      </footer>
     <!-- footer fim -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </body>
 </html>
