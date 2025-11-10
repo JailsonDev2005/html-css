@@ -2,6 +2,7 @@ import './App.css'
 import HelloWorld from './components/HelloWorld';
 import SaymyName from './components/SayMayName';
 import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
 
 function App() {
   const name = 'jailson'
@@ -15,6 +16,9 @@ function App() {
 
   return(
     <div className="App">
+      <h1>testando o CSS</h1>
+      <Frase/>
+      <Frase/>
       <SaymyName nome="Jailson"/>
       <Pessoa nome="JJ" idade="20" profissao="DevWeb" foto="https://via.placeholder.com/150"/>
 
