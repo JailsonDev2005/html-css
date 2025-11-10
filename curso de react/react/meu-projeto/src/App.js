@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld';
 import SaymyName from './components/SayMayName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
+import List from './components/List';
 
 function App() {
   const name = 'jailson'
@@ -21,7 +22,7 @@ function App() {
       <Frase/>
       <SaymyName nome="Jailson"/>
       <Pessoa nome="JJ" idade="20" profissao="DevWeb" foto="https://via.placeholder.com/150"/>
-
+      <List/>
     </div>
   )
 }
