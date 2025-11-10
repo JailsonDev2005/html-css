@@ -1,7 +1,7 @@
 import './App.css'
 import HelloWorld from './components/HelloWorld';
-
-
+import SaymyName from './components/SayMayName';
+import Pessoa from './components/Pessoa';
 
 function App() {
   const name = 'jailson'
@@ -15,11 +15,9 @@ function App() {
 
   return(
     <div className="App">
-      <h1>alterando jsx</h1>
-      <p>Olá, {newname}</p>
-      <p>soma {sum(5,10)}</p>
-      <img src={url} alt="img"/>
-      <HelloWorld />
+      <SaymyName nome="Jailson"/>
+      <Pessoa nome="JJ" idade="20" profissao="DevWeb" foto="https://via.placeholder.com/150"/>
+
     </div>
   )
 }
