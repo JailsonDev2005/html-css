@@ -143,6 +143,9 @@ body{
     margin-bottom: 2.5rem;
 }
 
+.principal .conteudo h2 span{
+    color: #f54974;
+}
 
 .principal .conteudo .mainBtn a{
     background-color: #f54974;
