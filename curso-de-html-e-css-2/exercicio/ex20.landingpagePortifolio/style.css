@@ -56,6 +56,7 @@ body{
 
 .nav-bar{
     display: flex;
+    flex-flow: row wrap;
 }
 
 .nav-bar li{
@@ -63,8 +64,6 @@ body{
     padding: .2rem;
     font-size: 1.2rem;
     font-weight: 400;
-    transition: all .5s ease-in-out;
-;
 }
 
 .nav-bar li a{
@@ -91,6 +90,17 @@ body{
     width: 100%;
 }
 
+.menu-link{
+    display: none;
+    color: var(--cor-fundo);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.menu-link:hover{
+    color: #d6d6d6;
+}
+
 /* estilização do main */
 
 .principal{
@@ -101,3 +111,28 @@ body{
     background-repeat: no-repeat;
 }
 
+/* media query */
+@media (max-width: 768px) {
+    .nav-bar{
+        display: none;
+        background-color: #f5497473 ;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+
+
+    .nav-bar .active{
+        display: flex;
+    }
+
+
+    .menu-link{
+        display: block; 
+    }
+}
