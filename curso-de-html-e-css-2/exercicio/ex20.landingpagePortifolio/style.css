@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:"Roboto Slab", serif ;
+}
+
+:root {
+  --cor-principal: #F7A8B8;
+  --cor-secundaria: #FFD9E0;
+  --cor-escura: #E36C8A;
+  --cor-fundo: #FFF8FA;
+  --cor-fundo-secundario: #FCE9EC;
+  --cor-texto: #5E5E5E;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/* estilização do header */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #e36c8a67;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.159);
+}
+
+.header-box h1 a{
+    font-size: 2.3rem;
+    padding-bottom: .2rem;
+    color: var(--cor-fundo);
+    border-bottom: 3.5px solid var(--cor-escura);
+}
+
+.header-box h1 a span{
+    color: #f54974;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar li{
+    margin: 1em;
+    padding: .2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all .5s ease-in-out;
+;
+}
+
+.nav-bar li a{
+    color: var(--cor-fundo);
+    position: relative;
+}
+
+.nav-bar li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2.5px;
+  background-color: #f54974;
+  transition: all .5s ease-in-out;
+}
+
+.nav-bar li a:hover{
+    color:#f54974 ;
+}
+
+.nav-bar li a:hover::after{
+    width: 100%;
+}
+
+/* estilização do main */
+
+.principal{
+    min-height: 100vh;
+    background-image: url(img/pexels-karola-g-5713817.jpg);
+    background-size:cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
