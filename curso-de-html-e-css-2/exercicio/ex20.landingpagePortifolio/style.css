@@ -59,11 +59,13 @@ body{
     flex-flow: row wrap;
 }
 
+
 .nav-bar li{
     margin: 1em;
     padding: .2rem;
     font-size: 1.2rem;
     font-weight: 400;
+    transition: all .5s ease-in-out;
 }
 
 .nav-bar li a{
@@ -105,34 +107,83 @@ body{
 
 .principal{
     min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
     background-image: url(img/pexels-karola-g-5713817.jpg);
     background-size:cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    padding: 1rem 7rem;
+
+}
+
+.principal .conteudo{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 1.5rem;
+}
+
+.principal .conteudo h3{
+    color: rgb(181, 172, 172);
+    font-size: 3.4rem;
+}
+
+.principal .conteudo h2{
+    font-size: 4rem;
+    color: var(--cor-fundo);
+}
+
+.principal .conteudo p{
+    color: var(--cor-fundo);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+
+.principal .conteudo .mainBtn a{
+    background-color: #f54974;
+    padding: 1rem;
+    border-radius: 12px;
+    color: var(--cor-fundo);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.439);
+    transition: all .3s ease-in-out;
+}
+
+.principal .conteudo .mainBtn a:hover{
+    background-color: #be3658;
+}
+
+.principal .img img{
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
 }
 
 /* media query */
 @media (max-width: 768px) {
     .nav-bar{
         display: none;
-        background-color: #f5497473 ;
         position: absolute;
-        flex-direction: column;
+        background-color: #f5497477;
         width: 100%;
-        top: 80px;
+        top: 81px;
         left: 0;
         right: 0;
         text-align: center;
     }
 
-
-
-    .nav-bar .active{
-        display: flex;
+    .open{
+        display: block;
     }
 
-
     .menu-link{
-        display: block; 
+        display: block;
     }
 }
