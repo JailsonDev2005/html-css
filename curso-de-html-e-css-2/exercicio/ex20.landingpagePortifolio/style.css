@@ -176,6 +176,7 @@ body{
         position: static;
     }
 
+
     .nav-bar{
         display: none;
         position: absolute;
@@ -185,6 +186,7 @@ body{
         top: 81px;
         left: 0;
         right: 0;
+        z-index: 99;
         text-align: center;
     }
 
@@ -233,6 +235,25 @@ body{
 .principal .conteudo .mainBtn a{
     padding: .7rem;
     font-size: 1rem;
+    
 }
 
+}
+
+@media (max-width: 400px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .principal {
+        padding: 0.5rem;
+    }
+
+    .principal .img img {
+        max-width: 220px;
+    }
+
+    .header-box {
+        padding: 1rem;
+    }
 }
