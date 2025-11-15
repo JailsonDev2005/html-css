@@ -194,7 +194,7 @@ main{
     }
 
     .btnMenu{
-        display: block;
+        display: flex;
     }
 
     .imagen{
@@ -246,6 +246,7 @@ main{
 
     ul{
         top: 93px;
+        z-index: 99;
     }
 
     .imagem img{

@@ -14,7 +14,7 @@ menuH.addEventListener("click", ()=>{
 
 navLink.addEventListener("click", ()=> {
     navLink.classList.remove("open");
-    menuH.setAttribute("class", "fa-solid fa-x")
+    menuI.setAttribute("class", "fa-solid fa-bars")
 });
 
 const ScrollRevealOption = {
