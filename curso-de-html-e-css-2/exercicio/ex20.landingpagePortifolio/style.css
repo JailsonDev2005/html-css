@@ -18,6 +18,12 @@
   --cor-texto: #5E5E5E;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+    
+}
+
 header{
     background-color: var(--cor-principal);
     display: flex;
@@ -25,6 +31,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 2rem;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.157);
 }
 
 header h1{
@@ -91,7 +98,83 @@ ul li a{
     color: var(--cor-fundo);
 }
 
-@media (max-width: 738px){
+main{
+    min-height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(img/pexels-karola-g-5713817.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem 4rem;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.conteudo h3{
+    font-size: 3.5rem;
+    color: rgb(239, 232, 232);
+}
+
+.conteudo h2{
+    font-size: 4.5rem;
+    color: white;
+}
+
+.conteudo h2 span{
+    color: #ea4870;
+}
+
+.conteudo p{
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.conteudo .btn a{
+    background-color: #ea4870;
+    color: white;
+    font-size: 500;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: .5s ease-in-out;
+    box-shadow:  3px 5px 5px rgba(0, 0, 0, 0.277);
+}
+
+.conteudo .btn a:hover{
+    background-color: #a82f4d;
+}
+
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imagen img{
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    outline: 3px solid rgba(255, 255, 255, 0.641);
+}
+@media (max-width: 800px){
+    main{
+       flex-direction: column-reverse;
+    }
+
+    .imagen img{
+        width: 300px;
+        height: 400px;
+    }
     ul{
         background-color:#e36c8ad4;
         position: absolute;
@@ -111,5 +194,81 @@ ul li a{
 
     .btnMenu{
         display: block;
+    }
+
+    .imagen{
+        padding: .5rem;
+        width: 100%;
+        margin: 4rem 0rem;
+    }
+
+    .conteudo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .conteudo h3{
+        font-size: 2.5rem;
+    }
+
+    .conteudo h2{
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .conteudo p{
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .conteudo .btn{
+        padding: 1rem;
+    }
+
+    .conteudo .btn a{
+        font-size: 1rem;
+        padding: .8rem;
+    }
+}
+
+@media (max-width: 400px){
+    header{
+        padding: 1rem 1.7rem;
+    }
+
+    header h1 a{
+        font-size: 2.5rem;
+    }
+
+    ul{
+        top: 93px;
+    }
+
+    .imagem img{
+        width: 250px;
+        height: 350px;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn a{
+        margin-bottom: 1rem;
+    }
+
+    .conteudo h2{
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .conteudo h3{
+        font-size: 2rem;
     }
 }
