@@ -23,28 +23,28 @@ const ScrollRevealOption = {
     duration: 2000,
 }
 
-ScrollReveal().reveal(".principal .img img",{
-    ...ScrollRevealOption,
-    delay: 3500,
-})
-
-ScrollReveal().reveal(".principal .conteudo h3",{
+ScrollReveal().reveal(".imagen img",{
     ...ScrollRevealOption,
     delay: 1000,
 })
 
-ScrollReveal().reveal(".principal .conteudo h2",{
+ScrollReveal().reveal(".conteudo h3",{
     ...ScrollRevealOption,
-    delay: 2500,
+    delay: 500,
 })
 
-ScrollReveal().reveal(".principal .conteudo p",{
+ScrollReveal().reveal(".conteudo h2",{
     ...ScrollRevealOption,
-    delay: 3000,
+    delay: 1000,
 })
 
-ScrollReveal().reveal(".principal .conteudo .mainBtn",{
+ScrollReveal().reveal(".conteudo p",{
     ...ScrollRevealOption,
-    delay: 3500,
+    delay: 1500,
+})
+
+ScrollReveal().reveal(".conteudo .btn",{
+    ...ScrollRevealOption,
+    delay: 2000,
     interval: 500,
 })
