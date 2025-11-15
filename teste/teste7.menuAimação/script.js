@@ -1,5 +1,5 @@
-let menuBtn = document.getElementById('menu-btn');
-let navlinks = document.getElementById('nav__links');
+let menuBtn = document.querySelector('.menu-btn');
+let navlinks = document.querySelector('ul');
 let menuBtnIcon = menuBtn.querySelector('i')
 
 
