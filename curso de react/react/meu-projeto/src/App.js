@@ -1,30 +1,19 @@
 import './App.css'
-import HelloWorld from './components/HelloWorld';
-import SaymyName from './components/SayMayName';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
-import List from './components/List';
+import Evento from './components/Evento'
+import Form from './components/form'
 
-function App() {
-  const name = 'jailson'
-  const newname = name.toUpperCase()
-
-  function sum(a, b){
-    return a + b;
-  }
-
-  const url = 'https://via.placeholder.com/150'
+function App(){
+  const nome = "maria"
 
   return(
-    <div className="App">
-      <h1>testando o CSS</h1>
-      <Frase/>
-      <Frase/>
-      <SaymyName nome="Jailson"/>
-      <Pessoa nome="JJ" idade="20" profissao="DevWeb" foto="https://via.placeholder.com/150"/>
-      <List/>
+    <div  className='App'>
+      <h1>Testando</h1>
+      <Evento numero="1"/>
+      <Evento numero="2"/>
+      <Form />
     </div>
+    
   )
 }
 
-export default App;
+export default App
