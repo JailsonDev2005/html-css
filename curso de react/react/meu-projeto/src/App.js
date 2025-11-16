@@ -1,16 +1,18 @@
 import './App.css'
-import OutraLista from './components/outraLista'
+import {useState} from 'react'
+import SeuNome from './components/SeuNome'
+import Saudacao from './components/Saudacao'
 
 function App(){
 
-  const meusItems = ['React', 'Viu', "Angular"]
+  const [nome, setNome] = useState()
 
   return(
 
     <div  className='App'>
-      <h1>Renderização de Lista</h1>
-
-    <OutraLista itens={meusItems}/>
+      <h1>state Lift</h1>
+      <SeuNome  setNome={setNome}/>
+      <Saudacao nome={nome}/>
     </div>
     
   )
