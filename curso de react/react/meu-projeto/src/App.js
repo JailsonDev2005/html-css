@@ -3,13 +3,11 @@ import Evento from './components/Evento'
 import Form from './components/form'
 
 function App(){
-  const nome = "maria"
 
   return(
     <div  className='App'>
       <h1>Testando</h1>
-      <Evento numero="1"/>
-      <Evento numero="2"/>
+      <Evento/>
       <Form />
     </div>
     
