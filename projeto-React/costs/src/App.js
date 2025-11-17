@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Home from './components/page/Home';
 import Contact from './components/page/Contact';
 import Company from './components/page/Company';
-import NewProject from './components/page/NewProjeto';
+import NewProject from './components/page/NewProject';
 import Projects from './components/page/Projects';
 
 import Container from './components/layout/Container';
