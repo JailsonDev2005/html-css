@@ -1,21 +1,29 @@
 import React from 'react';
-
-import Buttom from './Buttom'
+import Buttom from './Buttom';
+import { useParams, useNavigate } from 'react-router-dom';
+import './TaskDetails.css';
 
 const TaskDetails = () => {
-    const parems = useParams();
-    console.log(parems)
-    return ( 
+
+    const { taskTitle } = useParams();
+    const navigate = useNavigate();
+
+    const handleBackButtonClick = () => {
+        navigate(-1);
+    };
+
+    return (
         <>
             <div className="back-button-container">
-                <Buttom>Voltar</Buttom>
+                <Buttom onClick={handleBackButtonClick}>Voltar</Buttom>
             </div>
-            <div className="task-dgtails-container">
-                <p></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus consequatur repudiandae adipisci ratione ut reiciendis, et obcaecati. Rem consectetur explicabo voluptatum sunt neque exercitationem ipsum iusto magnam recusandae atque.</p>
+
+            <div className="task-details-container">
+                <h2>{taskTitle}</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
             </div>
         </>
-     );
-}
- 
+    );
+};
+
 export default TaskDetails;
