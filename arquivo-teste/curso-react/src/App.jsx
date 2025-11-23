@@ -7,6 +7,7 @@ import Tasks from "./components/Tasks";
 import './App.css';
 
 import Addtask from "./components/AddTask";
+import Header from "./components/Header";
 
 const App = () => {
 
@@ -38,15 +39,21 @@ const App = () => {
       {
         title: taskTitle,
         id: uuidv4(),
-        completed: false,
+        completed:false,
       }
     ];
     setTasks(newTask);
   };
 
+  const handleTaskDeletion = (taskId) =>{
+    const newTasks = tasks.filter(task => task.id !== taskId )
+    setTasks()
+  }
+
   return (
     <>
       <div className="container">
+        <Header/>
         <Addtask handleTaskAddition={handleTaskAddition} />
         <Tasks tasks={tasks} handleTaskClick={handleTaskClick}/>
       </div>
