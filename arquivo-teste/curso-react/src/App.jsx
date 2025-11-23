@@ -4,10 +4,15 @@ import {v4 as uuidv4 } from 'uuid'
 
 import Tasks from "./components/Tasks";
 
+import {BrowserRouter as Router, Route} from './react-router-dom'
+
 import './App.css';
 
 import Addtask from "./components/AddTask";
+
 import Header from "./components/Header";
+
+import TaskDetails from "./components/TaskDetails";
 
 const App = () => {
 
@@ -51,13 +56,19 @@ const App = () => {
   }
 
   return (
-    <>
+    <Router>
       <div className="container">
         <Header/>
-        <Addtask handleTaskAddition={handleTaskAddition} />
+        
+        <Route path="/" exact render={() => (
+          <>
+            <Addtask handleTaskAddition={handleTaskAddition} />
         <Tasks tasks={tasks} handleTaskClick={handleTaskClick}/>
+          </>
+        )}/>
+        <Route path="/:taskTitle" exact render={TaskDetails}/>
       </div>
-    </>
+      </Router>
   );
 }
 
