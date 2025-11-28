@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(196deg,rgba(125, 255, 233, 1) 0%, rgba(143, 255, 158, 1) 100%);
+}
+
+.container{
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.384);
+}
+
+.formulario-box{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    background-color: seagreen;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+.container h1{
+    font-size: 36px;
+    margin: -10px 0;
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0 ;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.input-box input::placeholder{
+    color: black;
+    font-weight: 400;
+}
+
+.input-box i{
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.esqueci-link{
+    margin: -15px 0 15px ;
+}
+
+.esqueci-link a{
+    font-size: 14.5px;
+    color: #fff;
+}
+
+.btn{
+    width: 100%;
+    height: 48px;
+    background-color: #11e947;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.178);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container p{
+    font-size: 14.5px;
+    margin: 15px 0;
+}
+
+.social-icones a{
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 24px;
+    color: black;
+    margin: 0 8px;
+}
