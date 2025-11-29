@@ -20,10 +20,11 @@ body{
     position: relative;
     width: 850px;
     height: 550px;
-    background-color: #fff;
+    background-color: #11e947;
     border-radius: 30px 0 0;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.384);
-    /* overflow: hidden; */
+    overflow: hidden;
+    margin: 20px;
 }
 
 .formulario-box{
@@ -33,15 +34,26 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    color: #11e947;
+    color: #fff;
     text-align: center;
     padding: 40px;
     z-index: 1;
+    transition: .6s ease-in-out 1.2s, visibility 0s 1s;
+    background-color: #11e947;
+}
+
+.container.active .formulario-box{
+    right: 50%;
 }
 
 .formulario-box.Cadastro{
      visibility: hidden;
 }
+
+.container.active .formulario-box.Cadastro{
+    visibility: visible;
+}
+
 
 form{
     width: 100%;
@@ -60,7 +72,7 @@ form{
 .input-box input{
     width: 100%;
     padding: 13px 50px 13px 20px;
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 8px;
     border: none;
     outline: none;
@@ -95,8 +107,8 @@ form{
 .btn{
     width: 100%;
     height: 48px;
-    background-color: #11e947;
-    color: #fff;
+    background-color: #fff;
+    color: black;
     border: none;
     outline: none;
     cursor: pointer;
@@ -111,13 +123,18 @@ form{
     margin: 15px 0;
 }
 
+.social-icones{
+    display: flex;
+    justify-content: center;
+}
+
 .social-icones a{
     display: inline-flex;
     padding: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.295);
+    border: 2px solid #fff;
     border-radius: 8px;
     font-size: 24px;
-    color: #11e947;
+    color: #fff;
     margin: 0 8px;
 }
 
@@ -147,26 +164,33 @@ form{
     position: absolute;
     width: 50%;
     height: 100%;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    color: #fff;
+    align-items: center;
     z-index: 2;
-    transition:  .6s ease-in-out ;
+    transition: .6s ease-in-out;
 }
 
-.alterar-painel.alterar-esuqerda{
+.alterar-painel.alterar-esquerda{
     left: 0;
+    transition-delay: 1.2s;
 }
 
-.container.active .alterar-painel.alterar-esuqerda{
+.container.active .alterar-painel.alterar-esquerda{
     left:  -50%;
     transition-delay: .6s ;
 }
 
 .alterar-painel.alterar-direita{
     right: -50%;
+    transition-delay: .6s;
+}
+
+.container.active .alterar-painel.alterar-direita{
+    right: 0;
+    transition-delay: 1.2s;
 }
 
 .alterar-painel p{
@@ -179,4 +203,37 @@ form{
     background-color: transparent;
     border:  2px solid #fff;
     box-shadow: none;
+}
+
+@media screen and (max-width: 650px){
+    .container{
+        height: calc(100vh - 40px);
+    }
+
+    .form-box{
+        bottom: 0;
+        width: 100%;
+        height: 70%;
+    }
+
+    .alterar-box::before{
+        top: -270%;
+        left: 0;
+        width: 100%;
+        height: 300%;
+    }
+
+    .alterar-painel{
+        width: 100%;
+        height: 30%;
+    }
+
+    .alterar-painel.alterar-esquerda{
+        top: 0;
+
+    }
+
+    .alterar-painel.alterar-direita{
+        right: 0;
+    }
 }
