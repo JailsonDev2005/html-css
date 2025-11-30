@@ -153,3 +153,40 @@ form{
     background-color: #ffffff6b;
     color: #000;
 }
+
+@media  screen and (max-width:768px ) {
+
+    body{
+        background-position: center;
+    }
+
+    .box h1{
+        font-size: 35px;
+    }
+
+        .container-box{
+        width: 80%;
+        height: 550px;
+        padding: 25px;
+    }
+
+        form{
+        padding: 10px 30px;
+    }
+}
+
+@media  screen and (max-width:450px ){
+    .container-box{
+        background-color: red;
+    }
+
+    .box h1{
+        font-size: 30px;
+    }
+
+    form{
+        padding: 10px;
+    }
+
+
+}
