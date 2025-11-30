@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: lightgray;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/vecteezy_dramatic-sunset-wildlife-landscape-illustration_10226933-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    border: 2px solid #ffffffa2;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 500px;
+    min-height: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.425);
+    transition: height .2s ease-in-out;
+    overflow: hidden;
+    margin: 0px 20px;
+}
+
+.container-box.active{
+    height: 520px;
+}
+
+.box.esquerda{
+    /* display: none; */
+    position: absolute;
+    transition: transform .18s ease-in-out;
+    transform: translateX(0);
+}
+
+.container-box.active .box.esquerda{
+    transition: none;
+    transform: translateX(-500px);
+}
+
+.container-box.active .box.direita{
+    transition: transform .18s ease-in-out;
+    transform: translateX(0);
+}
+
+.box.direita{
+    position: absolute;
+    transform: translateX(500px);
+    transition: none;
+}
+
+form{
+    padding: 10px;
+}
+
+.box{
+    width: 100%;
+    min-height: 100%;
+}
+
+
+
+.box h1{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 45px;
+}
+
+.box .form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.box .form-input i{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    font-size: 20PX;
+    transform: translatey(-50%);
+    color: #fff;
+}
+
+.box .form-input input{
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    padding: 15px 50px 15px 15px;
+    border: 2px solid #ffffffbb;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.253);
+}
+
+.box .form-input input::placeholder{
+    color: #fff;
+}
+
+.box p{
+   margin-bottom: 20px;
+   margin-top: 20px;
+   color: #fff;
+   font-size: 12px;
+}
+
+.box p a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.box p a:hover{
+    color: #000;
+}
+
+.box button{
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border: 2px solid #ffffffa6;
+    outline: none;
+    border-radius: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: transparent;
+    box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.253);
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+
+.box button:hover{
+    background-color: #ffffff6b;
+    color: #000;
+}

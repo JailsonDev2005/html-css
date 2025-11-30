@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-box">
+        <div class="box esquerda">
+            <form>
+                <h1>Login</h1>
+                <div class="form-input">
+                    <input type="email" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="Senha">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <p>Esqueceu a <a href="#">Senha?</a></p>
+                <button type="submit">Login</button>
+                <p>Não tem uma conta? <a href="#" class="login-link">Clica aqui</a></p>
+            </form>
+        </div>
+
+        <div class="box direita">
+            <form>
+                <h1>Cadastro</h1>
+                <div class="form-input">
+                    <input type="text" placeholder="Nome">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form-input">
+                    <input type="email" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="Senha">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="Confirme sua Senha">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+                <p>Ja tem ums conta? <a href="#" class="cadastro-link">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
