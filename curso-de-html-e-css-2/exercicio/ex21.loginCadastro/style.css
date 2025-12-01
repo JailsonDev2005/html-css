@@ -176,9 +176,6 @@ form{
 }
 
 @media  screen and (max-width:450px ){
-    .container-box{
-        background-color: red;
-    }
 
     .box h1{
         font-size: 30px;
