@@ -8,17 +8,63 @@
 
 body{
     width: 100vw;
-    height: 100vh;
-}
-
-.principal{
+    min-height: 100vh;
     display: grid;
     grid-template-columns: auto 1fr;
+    background-color: rgb(27, 34, 43);
+    overflow-x: hidden;
 }
 
 .sidebar{
-    background-color: red;
     position: sticky;
     top: 0;
-    bottom: 0;
+    left: 0;
+    align-self: start;
+    height: 100vh;
+    padding: 5px;
+    border-right: 1px solid #ffffff71;
+}
+
+.sidebar .title{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.sidebar .containe li{
+    margin-bottom: 20px;
+}
+
+.sidebar .containe a{
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 300ms ease-in-out;
+}
+
+.sidebar .containe a:hover{
+    background-color: rgb(51, 68, 88);
+}
+
+.conteudo{
+    padding: 10px;
+}
+
+.conteudo-box{
+    padding: 25px;
+    border: 1px solid #ffffff71;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.conteudo-box h2{
+    font-size: 30px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.conteudo p{
+    color: #ccc;
+    letter-spacing: 1px;
 }
