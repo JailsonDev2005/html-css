@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    padding: 0rem 1rem ;
+}
+
+/* header{
+    background: url(img/BR-pt-20251208-TRIFECTA-perspective_28a2b94d-2d12-4372-9e49-e973ac58b297_medium.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+} */
+
+header{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.829), rgba(0,0,0,0.6)),
+    url(img/BR-pt-20251208-TRIFECTA-perspective_28a2b94d-2d12-4372-9e49-e973ac58b297_medium.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cabecalho{                            
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+
+    padding: 2rem 1rem;
+}
+
+.logo svg{
+   width: 50%;
+}
+
+.logo svg path {
+    fill: #E62E2D;
+}
+
+.idioma-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    gap: 20px;
+}
+
+.idioma{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:  1px solid #ffffff96;
+    color: #fff;
+    padding: .4rem 1rem;
+    gap: 5px;
+    border-radius: 5px;
+   
+}
+
+.idioma svg{
+    margin: auto 8px;
+}
+
+select{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+option{
+  color: #000;
+}
+
+.btn{
+    background-color:red ;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    padding: .3rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.btn:hover{
+    background-color:rgb(161, 3, 3) ;
+}
+
+.conteudo{
+    text-align: center;
+    color: #fff;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 109px);
+}
+
+.conteudo h1{
+    font-size: 2rem;
+    margin-top: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.conteudo p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.conteudo input{
+    height: 45px;
+    width: 280px;
+    padding: 1.5rem 1rem ;
+    background-color: #303030b9;
+    border: 1.5px solid #ccccccd7;
+    color: #ffff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+.conteudo input::placeholder{
+    color: #ffffff81;
+}
+
+.conteudo button{
+    background-color: #C22524;
+    height: 100%;
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.conteudo button i{
+    font-size: 20px;
+}
