@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    color: #fff;
+}
+
+.txt-animado{
+    font-size: 45px;
+    font-weight:300 ;
+}
+
+.txt-animado span{
+    position: relative;
+}
+
+.txt-animado span::before{
+    content: "";
+    color: rgba(255, 0, 0, 0.705);
+    animation: Palavra 10s linear infinite alternate;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left:2px solid white;
+    right: -10px;
+    opacity: 1;
+    animation:digitar  .7s infinite;
+    width: calc(100% + 15px);
+    background-color: #212121;
+}
+
+@keyframes digitar{
+0%{
+    border-left:2px solid white;
+}
+}
+
+@keyframes Palavra{
+    0%, 20%{
+        content:"deixou o like?";
+    }
+
+    21%, 40%{
+        content: "ativou o sininho?";
+    }
+
+    41%, 60%{
+        content: "já comentou?";
+    }
+
+    61%, 80%{
+        content: "já se-inscreveu?";
+    }
+
+    81%, 100%{
+        content: "já compartilhou?";
+    }
+}

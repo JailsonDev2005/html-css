@@ -12,7 +12,7 @@
     font-size: 7rem;
     text-transform: uppercase;
 
-    background:  linear-gradient(45deg, #00e3cc, #32ab9c, #009688, #44e3d3);
+    background:  linear-gradient(45deg, #00e3cc, yellow, green, red);
     background-size: 400% 100%;
     animation:  texto 5s linear infinite alternate;
     -webkit-background-clip:text ;
