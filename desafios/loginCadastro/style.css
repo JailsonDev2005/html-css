@@ -89,16 +89,17 @@ body{
 
 .containerForm form button{
     background-color: #61C4DD;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #fff;
-    padding: .7rem 4.5rem;
+    padding: 1.1rem 1rem;
     border-radius: 12px;
     width: 50%;
     border: none;
     margin-bottom: 1.5rem;
     transition: .5s ease-in-out;
     cursor: pointer;
+    text-align: center;
 }
 
 .containerForm form button:hover{
