@@ -106,7 +106,17 @@ body{
      background-color: #3a8597;
 }
 
+.containerForm .login{
+    display: none;
+}
 
+.containerForm .Cadastro{
+    display: flex;
+}
+
+.active{
+    display: none;
+}
 @media (max-width:800px){
     .containerlogin{
     flex-direction: column;

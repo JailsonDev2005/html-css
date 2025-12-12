@@ -13,15 +13,26 @@
         </div>
         <div class="containerForm">
             
-            <form class="login">
+            <form class="login" id="login">
                 <h1>Login</h1>
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Senha" required>
                 <p><a href="#">Esqueceu a senha?</a></p>
                 <button>Login</button>
-                <p>Não tem uma conta? <a href="index2.html" target="_blank" rel="noopener noreferrer">Criar conta</a></p>
+                <p>Não tem uma conta? <a href="#" id="criar">Criar conta</a></p>
+            </form>
+
+            <form class="Cadastro" id="cadastro">
+                <h1>Cadastro</h1>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button>Cadastrar</button>
+                <p>ja tem uma conta? <a id="entrar" href="#">Entrar</a></p>
             </form>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
