@@ -13,12 +13,10 @@ img{
 
 body{
     background-color: #F2F4F7;
-    width: 100vw;
     min-height: 100vh;
 }
 
 .container-face{
-    min-width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -129,6 +127,7 @@ form p{
 .txt{
    font-size: 1.1rem;
    width: 500px;
+   margin-bottom: 3rem;
 }
 
 .txt a{
@@ -138,4 +137,59 @@ form p{
 
 .txt a:hover{
     text-decoration: underline;
+}
+
+
+@media (max-width:900px){
+ .container-face{
+    flex-direction: column;
+ }
+
+ .container-logo{
+    height: auto;
+    margin-bottom: 3rem;
+    width: 100%;
+ }
+
+ .container-logo p{
+    font-size: 1.2rem;
+    width: 200px;
+ }
+
+ .container-logo p{
+    margin: 0px;
+ }
+
+ .container-login{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ form input{
+    width: 300px;
+ }
+
+ .btn-entrar{
+    width: 300px;
+    font-size: 1.2rem;
+ }
+
+ 
+.btn-conta{
+    width: 300px;
+    font-size: 1.2rem;
+    padding:10px ;
+}
+
+
+.txt{
+    width: 300px;
+}
+}
+
+@media(max-width: 500px){
+    img{
+        width: 200px;
+    }
 }
