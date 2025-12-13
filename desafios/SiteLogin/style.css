@@ -85,9 +85,10 @@ main{
 
 
 .form-container{
+    opacity: 1;
     position: relative;
     padding: 15px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.363);
 }
@@ -157,12 +158,4 @@ main{
 .cadastro{
     display: flex;
     position: absolute;
-}
-
-.active{
-    display: none;
-}
-
-.close{
-    display: flex;
 }
