@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(190deg,rgba(40, 167, 199, 1) 0%, rgba(92, 255, 165, 1) 100%);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+.container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container nav a{
+    color: #fff;
+    margin: 0px 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.container nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+
+.container nav a:hover::after{
+    transform: scaleX(1);
+}
+
+.container button{
+    background: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 10px 35px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    transition: .4s ease-in-out;
+}
+
+.container button:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #727272;
+}
+
+.logo h1{
+    color: #fff;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 115.74px);
+}
+
+
+.form-container{
+    position: relative;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.363);
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+
+}
+
+.form-container form h2{
+    width: 100%;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.form-container form input{
+    width: 100%;
+    padding: 20px 15px;
+    margin-bottom: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    border-radius: 12px;
+}
+
+.form-container form input::placeholder{
+    font-size: 1.2rem;
+}
+
+.form-container form p{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.form-container form p a{
+    color: blue;
+}
+
+.form-container form button{
+    width: 60%;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(15deg,rgba(40, 199, 154, 1) 0%, rgba(92, 255, 165, 1) 100%);
+    color: #fff;
+}
+
+.form-container form button:hover{
+       background: linear-gradient(15deg,rgb(23, 112, 87) 0%, rgb(77, 214, 139) 100%);
+}
+
+.login{
+    display: none;
+    position: absolute;
+}
+
+.cadastro{
+    display: flex;
+    position: absolute;
+}
+
+.active{
+    display: none;
+}
+
+.close{
+    display: flex;
+}
