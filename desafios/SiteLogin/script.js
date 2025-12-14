@@ -1,29 +1,35 @@
-// let btnEntrar = document.getElementById("entrar");
-// let cadastro = document.getElementById("cadastro");
-// let login = document.getElementById("login");
-// let btnCadastro = document.getElementById("btnCadastro");
+let btnToggle = document.querySelector(".toggleBar");
+let toggleLinks = document.querySelector(".sidebar");
+let icon = btnToggle.querySelector('i');
+let a = toggleLinks.querySelectorAll("a")
+let btnlogin = document.getElementById("Login")
 
 
+btnToggle.addEventListener("click", ()=>{
+    toggleLinks.classList.toggle("open")
+
+    icon.classList.toggle("fa-bars")
+    icon.classList.toggle("fa-xmark")
+})
 
 
-// btnEntrar.addEventListener("click", ()=>{
-//     if(cadastro.style.display = "flex"){
-//         cadastro.style.display = "none"
-//         login.style.display = "flex"
-//     }
-// })
+a.forEach(a =>{
+    a.addEventListener("click", ()=>{
+       toggleLinks.classList.remove("open")
+       btnlogin.classList.remove("open")
 
-//  btnCadastro.addEventListener("click", ()=>{
-//     if(cadastro.style.display = "none"){
-//         cadastro.style.display = "flex"
-//         login.style.display = "none"
-//     }
-// })
+       icon.classList.add("fa-bars")
+       icon.classList.remove("fa-xmark")
+    })
+})
 
+if(btnlogin){
+    btnlogin.addEventListener("click", close)
+}
 
-const btnHam = document.getElementById("btnHam");
-const nav = document.querySelector("nav");
+function close(){
+    toggleLinks.classList.remove("open")
 
-btnHam.addEventListener("click", () => {
-    nav.classList.toggle("open");
-});
+    icon.classList.add("fa-bars")
+    icon.classList.remove("fa-xmark")
+}

@@ -8,52 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>LOGO</h1>
-            </div>
+    <header class="header">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
 
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contatos</a>
+        <nav class="sidebar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contatos</a>
+            <button id="Login">Login</button>
+        </nav>
 
-                <div class="EntLogin" id="EntLogin">
-                    <button>Login</button>
-                </div>
-            </nav>
-
-            <div class="btnHam" id="btnHam">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+        <div class="toggleBar">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
-    <main>
-        
-        <div class="form-container login" id="login">
-            <form>
-                <h2>Login</h2>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <p><a href="#">Esqueceu sua senha?</a></p>
-                <button>Login</button>
-                <p>Não tenho uma conta? <a href="#" id="btnCadastro">Cadastrar</a></p>
-            </form>
-        </div>
 
-        <div class="form-container cadastro" id="cadastro">
-            <form>
-                <h2>Cadastro</h2>
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Nome">
-                <input type="password" placeholder="Senha">
-                <button>Cadastrar</button>
-                <p>ja tem uma conta? <a href="#" id="entrar" onclick="mudalogin()">Entrar</a></p>
-            </form>
-        </div>
-    </main>
 
     <script src="script.js"></script>
 </body>
