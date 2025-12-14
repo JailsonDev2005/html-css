@@ -26,28 +26,51 @@
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="form-box login">
-                <h2>Login</h2>
-                <form>
-                    <div class="input-box">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input-box">
-                        <input type="password" placeholder="Senha">
-                    </div>
-                    <div class="remember-forgot">
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                    <div class="login-cadastro">
-                        <p>não tem uma conta?<a href="#" class="cadastro-link">Criar conta</a></p>
-                    </div>
-                </form>
-            </div>
+   <main>
+       <div class="container-box">
+        <div class="box esquerda">
+            <form>
+                <h1>Login</h1>
+                <div class="form-input">
+                    <input type="email" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="Senha">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <p>Esqueceu a <a href="#">Senha?</a></p>
+                <button type="submit">Login</button>
+                <p>Não tem uma conta? <a href="#" class="login-link">Clica aqui</a></p>
+            </form>
         </div>
-    </main>
+
+        <div class="box direita">
+            <form>
+                <h1>Cadastro</h1>
+                <div class="form-input">
+                    <input type="text" placeholder="Nome">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form-input">
+                    <input type="email" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="Senha">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="form-input">
+                    <input type="password" placeholder="Confirme sua Senha">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+                <p>Ja tem ums conta? <a href="#" class="cadastro-link">Login</a></p>
+            </form>
+        </div>
+    </div>
+   </main>
 
     <script src="script.js"></script>
 </body>
