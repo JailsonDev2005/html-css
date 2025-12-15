@@ -1,6 +1,11 @@
-@media (max-width: 601px) and (max-width: 900px) {
+@media(max-width: 900px) {
   main {
     flex-direction: column;
+  }
+
+  .container{
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.288);
   }
 
   .foto {
