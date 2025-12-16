@@ -8,8 +8,13 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #ccc;
+    width: 100%;
 }
 
 .header{
@@ -48,6 +53,7 @@ body{
     width: 200px;
     filter: brightness(0) invert(1);
 }
+
 
 .navLinks a{
     position: relative;
@@ -147,6 +153,7 @@ body{
     margin: auto;
     max-width: 1700px;
     min-height: 100vh;
+    scroll-margin-top: 120px;
 }
 
 .h2{
@@ -154,7 +161,6 @@ body{
     font-size: 3.9rem;
     font-weight: 600;
     background-color: #ccc;
-    width: 100%;
     text-align: center;
     padding: 1rem 0rem;
     margin: 2rem;
@@ -237,4 +243,74 @@ body{
 
 .box-carros button{
     margin-top: 1rem;
+}
+
+.contatos{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formulario{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem 4rem;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.425);
+}
+
+.formulario h3{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+
+.formulario input{
+    background-color: #ccc;
+    border: transparent;
+    outline: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    height: 70px;
+    border-radius: 12px;
+    width: 100%;
+    transition: .4s ease-in-out;
+}
+
+.formulario input:hover{
+    border: 3px solid #2b619b;
+    box-shadow: 0px 0px 5px 1px #163f6b;
+}
+
+.formulario input::placeholder{
+    color:#0A1E33;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.formulario button{
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    background-color: #0A1E33;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer a{
+    color: blue;
+    transition: .3s;
+}
+
+footer a:hover{
+    color: rgb(10, 10, 129);
 }
