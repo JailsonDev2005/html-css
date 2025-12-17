@@ -314,3 +314,71 @@ footer a{
 footer a:hover{
     color: rgb(10, 10, 129);
 }
+
+@media (max-width:950px){
+    .header{
+        border-bottom: 2px solid #fff;
+    }
+
+   .navLinks{
+    background-color: #0A1E33;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition:transform .5s ease-in-out ;
+   }
+
+   .open{
+    transform: translateX(0%);
+   }
+
+   .navLinks a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 2px solid #fff;
+    width: 500px;
+    height: 60px;
+    text-align: center;
+    overflow: hidden;
+   }
+
+   .toggle-bars{
+    display: block;
+   }
+
+   .sobre .container-sobre{
+    width: 800px;
+   }
+
+   .sobre  .container-sobre h3{
+    font-size: 2.5rem;
+   }
+
+
+   .container-carros{
+    padding: 2rem 1rem;
+    width: 800px;
+    margin: auto;
+   }
+
+
+
+   .box-carros img{
+    width: 200px;
+   }
+
+   footer{
+    font-size: 1.5rem;
+   }
+
+}
