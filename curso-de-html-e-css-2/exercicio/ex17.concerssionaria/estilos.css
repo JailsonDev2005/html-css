@@ -316,6 +316,18 @@ footer a:hover{
 }
 
 @media (max-width:950px){
+    .principal{
+        justify-content: center;
+    }
+
+    .texto-principal{
+        transform: translateX(0px);
+    }
+
+    .texto-principal h2{
+        font-size: 4rem;
+    }
+
     .header{
         border-bottom: 2px solid #fff;
     }
