@@ -50,6 +50,7 @@ body{
 }
 
 .logo h1{
+    width: 100%;
     color: #fff;
     cursor: pointer;
 }
