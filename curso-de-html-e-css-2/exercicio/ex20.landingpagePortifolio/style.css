@@ -95,7 +95,7 @@ body{
     background-size: cover;
     background-position: center bottom;
     width: 100%;
-    min-height: calc(100vh - 105.47px);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0rem 12rem;
