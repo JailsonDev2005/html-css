@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Portifólio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <!-- inicio do header -->
-     <header>
-        <h1><a href="#"><span>A</span>urora <span>N</span>unes</a></h1>
+    <!-- Header inicio -->
+    <header class="header">
+        <div class="logo">
+            <h1><span>A</span>urora <span>N</span>unes</h1>
+        </div>
 
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">SERVIÇOS</a></li>
-            <li><a href="#">CONTATOS</a></li>
-        </ul>
 
-        <div class="btnMenu">
+        <nav class="navegacao">
+            <a href="#">HOME</a>
+            <a href="#">SOBRE</a>
+            <a href="#">SERVIÇOS</a>
+            <a href="#">CONTATOS</a>
+        </nav>
+
+        <button class="btnLinks">
             <i class="fa-solid fa-bars"></i>
-        </div>
-     </header>
-     <!-- fim do header -->
+        </button>
+    </header>
+    <!-- Header fim -->
 
-     <!-- inico do main -->
-     <main>
-        <div class="conteudo">
-            <h3>Olá</h3>
-            <h2>Eu sou <span>Aurora Nunes</span> Desenvolvedora Web</h2>
+    <!-- main inicio -->
+    <main class="main">
+        <div class="texto-principal">
+            <h2>
+                Olá
+                Eu sou <span>Aurora Nunes</span> Desenvolvedora Web
+            </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum adipisci distinctio minus vitae accusamus voluptatibus. Numquam animi voluptate aliquam laboriosam. Alias possimus rem ratione eum provident cupiditate corporis laborum?</p>
-            <div class="btn">
-                <a href="#">Clique aqui</a>
-                <a href="#">Portfólio</a>
-            </div>
+            <a href="#">Clique aqui</a>
         </div>
+        <div class="foto">
+            <img src="img/pexels-nohnw-w-2157178380-34686206.jpg" alt="Foto de Aurora Nunes">
+        </div>
+    </main>
+    <!-- main fim -->
 
-        <div class="imagen">
-            <img src="img/pexels-nohnw-w-2157178380-34686206.jpg" alt="">
-        </div>
-     </main>
-     <!-- fim do main -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+
     <script src="script.js"></script>
 </body>
+
 </html>
