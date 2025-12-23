@@ -14,25 +14,27 @@ body{
 
 }
 
-.img{
-    
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+
 }
 
-.header{
-position: relative;
-}
 
 .header-box{
     padding: 1rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     max-width: 1300px;
     margin: auto;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
 }
 
 .header-box .logo{
@@ -57,7 +59,7 @@ position: relative;
     font-size: 1.3rem;
     font-weight: 500;
     color: #fff;
-        transition: width .5s ease-in-out;
+        transition: color .5s ease-in-out;
 }
 
 .header-box .nav a::after{
@@ -110,7 +112,7 @@ position: relative;
 }
 
 .main-container{
-
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
     width: 100%;
@@ -120,6 +122,7 @@ position: relative;
 .main-box{
     max-width: 500px;
     color: #fff;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
 .main-box h2{
@@ -155,3 +158,57 @@ position: relative;
     box-shadow: 0px 0px 10px 5px #489fce;
 }
 
+.header.sticky{
+    background-color: #489fce;
+}
+
+.sobre{
+    width: 100%;
+    min-height: calc(100vh - 141.99px);
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.sobre h2 span{
+    color: #489fce;
+}
+
+.sobre-container{
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.164);
+}
+
+.sobre-container .img img{
+    display: flex;
+    max-width: 900px;
+}
+
+.sobre-box{
+    align-items: center;
+    padding: 0rem 2rem
+}
+
+.sobre-box h3{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-box p{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
