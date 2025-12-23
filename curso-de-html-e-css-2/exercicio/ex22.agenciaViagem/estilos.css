@@ -23,7 +23,6 @@ body{
     top: 0px;
     left: 0;
     right: 0;
-
 }
 
 
@@ -103,7 +102,7 @@ body{
 
 .main{
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 131.99px);
      background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
      url(img/pexels-pixabay-62623.jpg);
     background-size: cover;
@@ -164,7 +163,7 @@ body{
 
 .sobre{
     width: 100%;
-    min-height: calc(100vh - 141.99px);
+    min-height:calc(100vh - 131.99px);
     display: flex;
     flex-direction: column;
 }
@@ -174,6 +173,7 @@ body{
     margin-top: 3rem;
     margin-bottom: 5rem;
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .sobre h2 span{
@@ -210,5 +210,64 @@ body{
     text-align: center;
     letter-spacing: 2px;
     font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.servicos{
+    margin-bottom: 5rem;
+    min-height: calc(100vh - 131.99px);
+}
+
+.servicos-box{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.servicos h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.servicos h2 span{
+    color: #489fce;
+}
+
+.servicos .servicos-cards{
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem .5rem;
+    border-radius: 12px;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.281);
+    transition: .3s ease-in-out;
+}
+
+.servicos .servicos-cards:hover{
+        box-shadow: 0px 0px 5px 5px #489fce;
+        transform: scale(1.05);
+}
+
+.servicos-cards h3{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.1rem;
+}
+
+.servicos-cards p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.servicos .servicos-cards img{
+    display: flex;
+    width: 200px;
     margin-bottom: 1.5rem;
 }
