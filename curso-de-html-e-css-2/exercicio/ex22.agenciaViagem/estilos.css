@@ -11,16 +11,15 @@
 body{
     width: 100%;
     min-height: 100vh;
-
-}
-
-.header{
     background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(img/pexels-pixabay-62623.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left bottom;
-    min-height: 100vh;
+}
+
+.header{
+position: relative;
 }
 
 .header-box{
@@ -34,7 +33,6 @@ body{
     top: 0px;
     left: 0;
     right: 0;
-    /* background-color: red; */
 }
 
 .header-box .logo{
@@ -94,4 +92,54 @@ body{
 .header img{
     display: flex;
     max-width: 100px;
+}
+
+.section{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-box{
+    max-width: 500px;
+    color: #fff;
+}
+
+.main-box h2{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.main-box h2 span{
+    color:#489fce ;
+}
+
+.main-box p{
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 2.5rem;
+}
+
+.btn{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #489fce;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.39);
+    transition: .3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #2e6888;
+    box-shadow: 0px 0px 10px 5px #489fce;
 }
