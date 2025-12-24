@@ -23,6 +23,8 @@ body{
     top: 0px;
     left: 0;
     right: 0;
+    z-index: 10;
+    transition: background-color .4s ease;
 }
 
 
@@ -102,7 +104,7 @@ body{
 
 .main{
     width: 100%;
-    min-height: calc(100vh - 131.99px);
+    min-height:100vh;
      background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
      url(img/pexels-pixabay-62623.jpg);
     background-size: cover;
@@ -163,7 +165,7 @@ body{
 
 .sobre{
     width: 100%;
-    min-height:calc(100vh - 131.99px);
+    min-height:100vh;
     display: flex;
     flex-direction: column;
 }
@@ -215,13 +217,13 @@ body{
 
 .servicos{
     margin-bottom: 5rem;
-    min-height: calc(100vh - 131.99px);
+    min-height: 100vh;
 }
 
 .servicos-box{
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .servicos h2{
@@ -270,4 +272,43 @@ body{
     display: flex;
     width: 200px;
     margin-bottom: 1.5rem;
+}
+
+.endereco{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.endereco h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.endereco h2 span{
+    color: #489fce;
+}
+
+.end-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-box iframe{
+    background-color: #489fce;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.281);
+}
+
+
+
+footer p{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1.5rem 0rem;
 }
