@@ -8,6 +8,10 @@
      font-family: "Poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 100%;
     min-height: 100vh;
@@ -100,6 +104,7 @@ body{
 .section{
     max-width: 1300px;
     margin: auto;
+    scroll-margin-top: 120px;
 }
 
 .main{
@@ -311,4 +316,58 @@ footer p{
     font-size: 1.3rem;
     text-align: center;
     padding: 1.5rem 0rem;
+}
+
+@media (max-width: 768px){
+    .btnBars{
+        display: block;
+        z-index: 1;
+    }
+
+    .header-box{
+        padding: 1rem 2rem;
+    }
+
+    .nav{
+        background-color:#489fce;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        transform: translateX(100%);
+        transition:transform .4s ease-in-out ;
+    }
+
+    .nav a{
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0rem;
+    }
+
+    .open{
+        transform: translateX(0%);
+    }
+
+    .main-container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-box{
+        text-align: center;
+    }
+
+    .main-box h2{
+        font-size: 4rem;
+    }
+
+    .main-box p{
+        font-size: 1.2rem;
+    }
+
 }
