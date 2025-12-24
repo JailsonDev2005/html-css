@@ -227,6 +227,7 @@ body{
 
 .servicos-box{
     display: grid;
+    justify-items: center;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -245,6 +246,7 @@ body{
 
 .servicos .servicos-cards{
     border: 1px solid rgba(0, 0, 0, 0.233);
+    width: 100%;
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -369,5 +371,94 @@ footer p{
     .main-box p{
         font-size: 1.2rem;
     }
+    .sobre{
+        padding: 0rem 2rem;
+    }
 
+    .sobre-container{
+        flex-direction: column;
+        max-width: 600px;
+        margin: auto;
+        padding: 1.5rem 2rem;
+    }
+
+    .sobre-container img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .servicos-box{
+        padding: 0rem 2rem;
+    }
+    
+    .servicos .servicos-cards:hover{
+        box-shadow:  0px 5px 5px 2px rgba(0, 0, 0, 0.281);
+        transform: scale(1);
+}
+
+    .end-box{
+      max-width: 100%;
+      padding: 0rem 2rem;
+    }
+
+    .sobre h2{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .servicos h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    }
+
+    .endereco h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px){
+
+   .header-box .logo h1{
+    font-size: 1.9rem;
+   }
+
+   .header-box .logo img{
+    width: 200px;
+   }
+
+   .main-container h2{
+    font-size: 1.5rem;
+    width: 100%;
+   }
+
+   .main-container p{
+    font-size: 1rem;
+   }
+
+   .sobre-box {
+    text-align: center;
+   }
+
+   .sobre-box p{
+    font-size: 1.1rem;
+   }
+
+   .servicos-box{
+    padding: 0rem 5rem;
+   }
 }
