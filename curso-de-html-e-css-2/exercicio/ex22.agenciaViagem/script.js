@@ -19,12 +19,37 @@ link.forEach(link =>{
 })
 
 
-
-
-
-
-
 window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
     header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 2000,
+    interval: 500,
+}
+
+ScrollReveal().reveal(".logo", {
+    ...scrollRevealOption,
+    delay: 1500,
+    origin: "left",
+    distance: "400px",
+})
+
+ScrollReveal().reveal(".nav a", {
+    ...scrollRevealOption,
+    delay: 1800,
+    origin: "top",
+    interval: 500,
+})
+
+ScrollReveal().reveal(".main-box", {
+    ...scrollRevealOption,
+    delay: 2500,
+    origin: "left",
+    distance: "400px",
+})
+
+  AOS.init();
