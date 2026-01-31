@@ -381,13 +381,14 @@ footer p{
 
     .sobre-container{
         flex-direction: column;
-        max-width: 600px;
+        max-width: 500px;
         margin: auto;
-        padding: 1.5rem 2rem;
+        padding: 2rem;
+        text-align: center;
     }
 
     .sobre-container img{
-        width: 100%;
+        width: 350px;
         margin-bottom: 1rem;
     }
 
@@ -457,6 +458,11 @@ footer p{
    .sobre-box {
     text-align: center;
    }
+
+    .sobre-container img{
+        width: 200px;
+        margin-bottom: 1rem;
+    }
 
    .sobre-box p{
     font-size: 1.1rem;
